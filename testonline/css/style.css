@@ -28,6 +28,11 @@ body {
     color: #CAD1E9;
     font-size: 32px;
     font-family: Roboto;
+    text-decoration: none;
+} 
+
+#name:hover {
+    color: white;
 }
 
 #box {
@@ -61,7 +66,7 @@ body {
 }
 
 #main {
-    height: 700px;
+    height: 500px;
 
 }
 
@@ -91,9 +96,11 @@ body {
 }
 
 .pic {
-    width: 40px;
+    width: 35px;
     height: 40px;
     float: left;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .text {

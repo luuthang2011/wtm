@@ -7,18 +7,56 @@ body {
 }
 
 #search {
-    height: 70px;
+    height: 50px;
     background-color: #33409E;   
 }
 
 #logo {
-    width: 70px;
-    height: 70px;
-    margin: auto;
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#name {
+    width: 200px;
+    height: 50px;
+    float: left;
+    margin-left: 10px;
+    line-height: 48px;
+    color: #CAD1E9;
+    font-size: 32px;
+    font-family: Roboto;
+}
+
+#box {
+    width: 690px;   /* tinh toan */
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+    background-color: #3F59B9;
+}
+
+#box-pic {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 2.5px;
+    margin-left: 20px;
+}
+
+#box-text {
+    width: 625px;
+    height: 18px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 20px;
 }
 
 #menu {
-    height: 70px;
+    height: 50px;
     background-color: #4864C0;
 }
 

@@ -1,3 +1,12 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
 body {
     width: 1300px;
     margin: auto;
@@ -61,8 +70,35 @@ body {
 }
 
 #menu {
-    height: 50px;
+    height: 150px;
     background-color: #4864C0;
+    color: white;
+}
+
+#line-link{
+    height: 50px;
+    width: 1300px;
+    float: left;
+}
+
+#line-link ul {
+    padding: 0px;   /*mất khoảng cách ul-li*/
+}
+
+#line-link ul li {   
+    float: left;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+#line-title{
+    height: 50px;
+    float: left;
+}
+
+#line-menu{
+    height: 50px;
+    float: left;
 }
 
 #main {

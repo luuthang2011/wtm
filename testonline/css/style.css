@@ -17,7 +17,9 @@ body {
 
 #search {
     height: 50px;
-    background-color: #33409E;   
+    width: 1300px;
+    background-color: #33409E;  
+    position: fixed;  /*ghi lại wid */
 }
 
 #logo {
@@ -69,10 +71,20 @@ body {
     margin-left: 20px;
 }
 
+#account {
+    width: 200px;
+    height: 50px;
+    margin-left: 90px;
+    float: left;
+}
+
 #menu {
     height: 150px;
+    width: 1300px;
     background-color: #4864C0;
     color: white;
+    position: fixed;
+    margin-top: 50px;
 }
 
 #line-link{
@@ -102,8 +114,7 @@ body {
 }
 
 #main {
-    height: 500px;
-
+    height: 700px; /*2 cái trên fixed*/
 }
 
 #links { 

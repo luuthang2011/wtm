@@ -1,16 +1,25 @@
+.pading {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
 #my-body {
     width: 1000px;
     height: 1600px;
     background-color: #353535;
+    border-top: 5px solid #A7C353;   
 }
 
 #my-navbar {
     background-color: white;
-    border-top: 5px solid #A7C353;
+    margin-bottom: 0px;      /*not space*/
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #A7C353;
 }
 
 #logo {
-    width: 309px;
+    width: 299px;
     margin-top: 5px;
 }
 
@@ -20,4 +29,15 @@
 
 #nav-li {
     margin-left: 0px;   /*try many time*/
+}
+
+#my-quote {
+    height: 140px;
+    background-color: white;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+#my-slide {
+    background-color: white;
 }

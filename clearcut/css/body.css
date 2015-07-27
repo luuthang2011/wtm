@@ -4,32 +4,20 @@
     background-color: #353535;
 }
 
-#my-container {
-    width: 960px;
-    margin: 5px;
-}
-
 #my-navbar {
-    height: 100px;
     background-color: white;
     border-top: 5px solid #A7C353;
 }
 
 #logo {
-    margin-top: 22.5px;
-    background-color: aqua;
+    width: 309px;
+    margin-top: 5px;
 }
 
 #home {
     background-color: #A7C353;
-    height: 95px;  /* must rewrite */
-    line-height: 90px;
-}
-
-#nav-li li {
-    height: 95px ;
 }
 
 #nav-li {
-    margin-left: 124px;   /*try many time*/
+    margin-left: 0px;   /*try many time*/
 }

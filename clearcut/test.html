@@ -13,20 +13,26 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">WebSiteName</a>
-            </div>
-            <div>
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Page 1</a></li>
-                <li><a href="#">Page 2</a></li>
-                <li><a href="#">Page 3</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <div class="container" id="my-body">
+            <nav class="navbar navbar-default" id="my-navbar">      <!-- made form deffault -->
+                <div class="container-fluid">      <!-- full screen: pading: 20px -->
+                    <div class="navbar-header" id="logo">
+                        <a class="navbar-brand" href="#">
+                            <img alt="Brand" src="images/logo.png" width="160px" height="55px"/>
+                        </a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav" id="nav-li">
+                            <li class="active"><a id="home" href="#">HOME</a></li>     <!-- active: highline -->
+                            <li><a href="#">STYLE DEMO</a></li>
+                            <li><a href="#">FULL WIDTH</a></li>
+                            <li><a href="#">DROPDOWN</a></li>
+                            <li><a href="#">FORTFOLIO</a></li>
+                            <li><a href="#" style="padding-right: 0px;">GALLERY</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </body>
 </html>

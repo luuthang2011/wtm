@@ -157,7 +157,7 @@ body {
 
 #my-main {
     border-top: 1px solid silver;
-    line-height: 20px;
+    padding-top: 10px;
 }
 
 #my-main div h3 {
@@ -181,6 +181,18 @@ body {
     line-height: 0px;
 }
 
+@media (max-width: 768px) {                /* mobile */
+    #my-servises div {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {      /* tablet */
+    #my-servises div {
+        margin-bottom: 20px;
+    }
+}
+
 #my-servises div div p {
     margin-right: 10px;
 }
@@ -191,14 +203,6 @@ body {
 
 #my-servises div p {
     margin-top: 15px;
-}
-
-#my-client h3 {                       /*client*/
-    font-size: 16px;
-}
-
-#my-client div {                       
-    margin-bottom: 30px;
 }
 
 #my-client div p { 

@@ -1,22 +1,279 @@
-#nav-li li a{
-    line-height: 90px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: gray;
-    font-size: 13px;
-    height: 95px;
-}
-
-#home {
-    color: white !important;
-}
-
-#my-quote p {
-    font-style: italic;
-    font-size: 20px;
+/* -----------------------------
+* body
+*-------------------------------*/
+body {
+    background-color: #282828;  
+    font-family: Georgia, serif;
+    font-size: 13px; 
     color: #666666;
 }
 
-.small {
-    font-size: 10px;
+#my-body {   
+    background-color: white; 
+    max-width: 960px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 5px solid #A7C353;
+}
+
+/* -----------------------------
+* navbar
+*-------------------------------*/
+
+#my-nav {
+    border: none;
+    border-radius: 0px;
+    /*height: 100px;    error*/
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+#my-nav div ul li a {
+    height: 100px;
+    line-height: 80px;
+}
+
+#my-nav div ul li a:hover {
+    background-color: #A7C353;
+    color: white;
+}
+
+#my-active {
+    background-color: #A7C353;
+    color: white;
+}
+
+#my-nav .navbar-brand img {
+    margin-top: 5px;
+}
+
+#my-nav .navbar-brand {    /*fix h*/
+    min-height: 96px;
+}
+
+/* -----------------------------
+* quote
+*-------------------------------*/
+
+#my-quote {
+    font-style: italic;
+    font-size: 22px;
+    text-decoration: aqua;
+    max-width: 920px;
+    border-top: 1px solid #A7C353;
+    min-height: 135px;
+}
+
+#my-quote p {
+    max-width: 740px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* -----------------------------
+* slide
+*-------------------------------*/
+@media (max-width: 768px) {                /*768px : @screen-xs-max*/
+    #my-slide {
+        display: none;
+    }
+}
+            
+#my-slide {
+    margin-bottom: 80px;
+}
+
+#my-slide .carousel-caption {
+    position: absolute;
+    right: 7%;
+    bottom: 0;
+    left: 53%;
+    max-width: 40%;   /*medium display*/
+    max-height: 60%;
+    text-shadow: none;
+    padding: 10px;
+}
+
+#my-slide .carousel-caption h2 {
+    background-color: #a7c353;
+    font-size: 22px;
+    color: #fff;
+    padding-top: 11px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+#my-slide .carousel-caption p {
+    background-color: white;
+    padding-top: 14px;
+    padding-bottom: 9px;
+    margin: 0;
+    color: #666666;
+}
+
+#my-slide .carousel-indicators {    /*slide point*/
+    bottom: -40px;
+    margin-bottom: 0;
+    
+}
+
+#my-slide .carousel-control {      
+  color: #fff;
+}
+
+#my-slide .carousel-indicators .active {
+  background-color: #fff;
+  border: #a7c353 solid 2px;
+}
+
+#my-slide .carousel-indicators li {
+  background-color: #a7c353;
+  border: #a7c353 solid 2px;
+  width: 15px;                       /*size of point*/
+  height: 15px;
+}
+
+#my-slide .carousel-control {      /*border control*/
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 42%;
+}
+
+#my-slide .carousel-control.left {   /*none background control*/
+    margin-left: 10px;
+    background: none;
+}
+
+#my-slide .carousel-control.right {
+    margin-right: 10px;
+    background: none;
+}
+
+/* -----------------------------
+* main
+*-------------------------------*/
+
+#my-main {
+    border-top: 1px solid silver;
+    line-height: 20px;
+}
+
+#my-main div h3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#my-main div p {
+    margin-top: 20px;
+    color: #868686;
+}
+
+#my-main div a {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #a7c353;
+}
+
+#my-servises div div h4 {
+    font-size: 14px;
+    line-height: 0px;
+}
+
+#my-servises div div p {
+    margin-right: 10px;
+}
+
+#my-servises a {
+    margin-top: 0px !important;
+}
+
+#my-servises div p {
+    margin-top: 15px;
+}
+
+#my-client h3 {                       /*client*/
+    font-size: 16px;
+}
+
+#my-client div {                       
+    margin-bottom: 30px;
+}
+
+#my-client div p { 
+    margin-top: 0px;
+}
+
+#my-client div a { 
+    margin-top: 0px;
+    margin-left: 175px;
+}
+
+#my-client span {
+    margin-left: 10px;
+}
+
+#my-client img:hover {
+    /**/ 
+}
+
+/* -----------------------------
+* footer
+*-------------------------------*/
+
+#my-body2 {   
+    background-color: #313131;
+    max-width: 960px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    color: #999999;
+}
+
+#my-body2 footer div h4 {
+    color: white;
+    font-size: 16px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #383838;
+}
+
+#my-body2 a {
+    color: #a7c353;
+}
+
+#my-social div {
+    border-bottom: 1px solid #383838;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#my-blog h5 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.meta {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+#my-blog div {
+    margin-bottom: 30px;
+}
+
+#my-form input {
+    background-color: #383838;
+    border: none;
+}
+
+#my-form textarea {
+    background-color: #383838;
+    border: none;
+}
+
+#my-form button {
+    background-color: #a7c353;
+    border: none;
 }

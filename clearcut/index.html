@@ -1,118 +1,264 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
-    	<meta name="author" content="GallerySoft.info" />
-        <link href='css/style.css' rel='stylesheet' type='text/css'/>
-        <link href='css/body.css' rel='stylesheet' type='text/css'/>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css"/>
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>        
-              
-    	<title>ClearCut</title>
-        <!--coder: luuthang2011 -->
-    </head>
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf8"/>
+	<meta name="author" content="GallerySoft.info" />
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>  
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-    <body>
-        <div class="container pading" id="my-body">
-            <nav class="navbar navbar-default" id="my-navbar">      <!-- made form deffault -->
-                <div class="container-fluid">      <!-- full screen: pading: 20px -->
-                    <div class="navbar-header" id="logo">
-                        <a class="navbar-brand" href="#">
-                            <img alt="Brand" src="images/logo.png" width="160px" height="55px"/>
-                        </a>
-                    </div>
-                    <div>
-                        <ul class="nav navbar-nav" id="nav-li">
-                            <li class="active"><a id="home" href="#">HOME</a></li>     <!-- active: highline -->
-                            <li><a href="#">STYLE DEMO</a></li>
-                            <li><a href="#">FULL WIDTH</a></li>
-                            <li><a href="#">DROPDOWN</a></li>
-                            <li><a href="#">FORTFOLIO</a></li>
-                            <li><a href="#" style="padding-right: 0px;">GALLERY</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="container-fluid text-center jumbotron" id="my-quote">     <!-- mid-center -->
-                <p>&ldquo; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam<br />
-                erat. In fringilla massa ut nisi ullamcorper pellentesque &bdquo;</p>
+	<title>ClearCut</title>
+</head>
+
+<body>
+    <div id="my-body" class="container">
+        <nav  id="my-nav" class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <!-- data-target: effect button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png"/>
+                </a>
             </div>
-            <div class="container-fluid pading" id="my-slide"> 
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">   <!-- id: click to points -->
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                        <li data-target="#myCarousel" data-slide-to="4"></li>
-                    </ol>                
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="images/img_chania.jpg" alt="demo">
-                        </div>
-                        <div class="item">
-                            <img src="images/img_chania (1).jpg" alt="demo">
-                        </div>
-                        <div class="item">
-                            <img src="images/img_chania (2).jpg" alt="demo">
-                        </div>
-                        <div class="item">
-                            <img src="images/img_chania (3).jpg" alt="demo">
-                        </div>
-                        <div class="item">
-                            <img src="images/img_chania (4).jpg" alt="demo">
-                        </div>
-                    </div>
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>  
-            </div> 
-            <div class="container-fluid pading" id="my-main">
-                <div class="row">
-                    <div class="col-xs-4">
-                        <h2>A Littel About Us</h2>
-                        <img src="images/img.jpg"/>
-                        <p>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt.
-                         Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit nonummy laoreet phasellent 
-                         penatoque in antesque pellus elis eget tincidunt.
-                        </p>
-                        <p>Idenim semper pellente velis felit ac. Justoid nonummy laoreet phasellent penatoque in 
-                        antesque pellus elis eget tincidunt.
-                        </p>
-
-                    </div>
-                    <div class="col-xs-4">
-                        <h2>Some of Our Services</h2>
-                        <p class="float">
-                            <img src="images/small img.jpg" /> 
-                            <h5>Service Title</h5>
-                            <p class="small">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean. </p>
-                        </p>
-                        <p class="float">
-                            <img src="images/small img.jpg" /> 
-                            <h5>Service Title</h5>
-                            <p class="small">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean. </p>
-                        </p>
-                        <p class="float">
-                            <img src="images/small img.jpg" /> 
-                            <h5>Service Title</h5>
-                            <p class="small">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean. </p>
-                        </p>
-                    </div>
-                    <div class="col-xs-4">333</div>
-                </div>
-            </div>         
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
+                <ul class="nav navbar-nav navbar-right">       <!-- right -->
+                    <li class="active"><a id="my-active" href="#">HOME</a></li>
+                    <li><a href="#">STYLE DEMO</a></li>
+                    <li><a href="#">FULL WIDTH</a></li>
+                    <li><a href="#">DROPDOWN</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="my-quote" class="text-center">
+            <p>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque „</p>
         </div>
-    </body>
+        <div id="my-slide" class="carousel slide" data-ride="carousel">
+            <!-- indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#my-slide" data-slide-to="0" class="active"></li>
+    		    <li data-target="#my-slide" data-slide-to="1"></li>
+    		    <li data-target="#my-slide" data-slide-to="2"></li>
+    		    <li data-target="#my-slide" data-slide-to="3"></li>
+    		    <li data-target="#my-slide" data-slide-to="4"></li>
+            </ol>
+            <!-- wrapper -->
+            <div class="carousel-inner" role="listbox">   <!-- made slide list -->
+            <div class="item active">
+                <img src="images/img_chania.jpg"/>
+                <div class="carousel-caption">
+                    <h2 class="caption-title">
+    					This Is A Very Long Slider Title
+    				</h2>	   
+    				<p class="caption-content">
+    					Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit.
+    				</p>
+                </div>
+            </div>
+                <div class="item">
+                    <img src="images/img_chania (1).jpg"/>
+                    <div class="carousel-caption">
+                        <h2 class="caption-title">
+        					This Is A Very Long Slider Title
+        				</h2>	   
+        				<p class="caption-content">
+        					Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit.
+        				</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img_chania (2).jpg"/>
+                    <div class="carousel-caption">
+                        <h2 class="caption-title">
+        					This Is A Very Long Slider Title
+        				</h2>	   
+        				<p class="caption-content">
+        					Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit.
+        				</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img_chania (3).jpg"/>
+                    <div class="carousel-caption">
+                        <h2 class="caption-title">
+        					This Is A Very Long Slider Title
+        				</h2>	   
+        				<p class="caption-content">
+        					Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit.
+        				</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img_chania (4).jpg"/>
+                    <div class="carousel-caption">
+                        <h2 class="caption-title">
+        					This Is A Very Long Slider Title
+        				</h2>	   
+        				<p class="caption-content">
+        					Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit.
+        				</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#my-slide" role="button" data-slide="prev"> <img src="images/arrow_left.png"/></a>
+            <a class="right carousel-control" href="#my-slide" role="button" data-slide="next"> <img src="images/arrow_right.png"/></a>
+        </div>
+        <div id="my-main" class="row">
+            <!-- about // col.lg 4 -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h3>A little About Us</h3>
+                <img src="images/img.jpg" class="img-thumbnail img-responsive img-fullwidth" alt="270x140px"/>
+                <p>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt.</p>
+                <p>Idenim semper pellente velis felit ac. Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt.</p>
+                <a href="#" class="pull-right">Read More About Us &raquo;</a>
+            </div>
+            <!-- servises -->
+            <div id="my-servises" class="col-xs-12 col-sm-6 col-md-4">
+                <h3>Some of Our Services</h3>
+                <div>
+                    <img src="images/small img.jpg" class="pull-left media-left" alt="64x64px"/>
+                    <div class="media-right">
+                        <h4>Service Title</h4>
+                        <p>Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/small img.jpg" class="pull-left media-left" alt="64x64px"/>
+                    <div class="media-right">
+                        <h4>Service Title</h4>
+                        <p>Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+                    </div>
+     
+                </div>
+                <div>
+                    <img src="images/small img.jpg" class="pull-left media-left" alt="64x64px"/>
+                    <div class="media-right">
+                        <h4>Service Title</h4>
+                        <p>Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+                    </div>
+          
+                </div>
+                <div>
+                    <img src="images/small img.jpg" class="pull-left media-left" alt="64x64px">
+                    <div class="media-right">
+                        <h4>Service Title</h4>
+                        <p>Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+                    </div>
+                </div>
+                <a href="#" class="pull-right">View All Of Our Services &raquo;</a>
+            </div>
+            <!-- client -->
+            <div id="my-client" class="col-xs-12 col-sm-6 col-md-4">
+                <h3>What Our Client Say</h3>
+                <div>
+                    <h4>
+                        <img src="images/quote.png"/>
+                        <span>Tommy Tanker - CEO</span>
+                    </h4>
+                    <p>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
+                    <a href="#" class="pull-right">View This Project &raquo;</a>         
+                </div>
+                <div>
+                    <h4>
+                        <img src="images/quote.png"/>
+                        <span>Tommy Tanker - CEO</span>
+                    </h4>
+                    <p>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
+                    <a href="#" class="pull-right">View This Project &raquo;</a>         
+                </div>
+            </div>           
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="my-body2" class="container">
+        <footer class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <h4>Company Details</h4>
+                <p>
+                    Company Name<br/>
+                    Street Name & Number<br/>
+                    Town<br />
+                    Postcode/Zip
+                </p>
+                <p>
+                    Tel: xxxxx xxxxxxxxxx<br/>
+                    Fax: xxxxx xxxxxxxxxx<br/>
+                    Email: <a href="mailto:contact@mydomain.com">contact@mydomain.com</a>
+                </p>
+                <p>
+                <strong>Office Hours</strong><br>
+                    Monday - Friday: 08:00 - 17:30<br>
+                    Saturday: 08:00 - 13:00
+                </p>
+            </div>
+            <div id="my-social" class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <h4>Stay Social</h4>
+                <div><i class="fa fa-linkedin" ></i><a href="#">Get linked up in LinkedIn</a></div>
+                <div><i class="fa fa-twitter"></i><a href="#">Get up with our Tweets</a></div>
+                <div><i class="fa fa-pinterest"></i><a href="#">Photos on Pinterest</a></div>
+                <div><i class="fa fa-rss"></i><a href="#">RSS Feed</a></div>  
+            </div>
+            <div id="my-blog" class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <h4>Form The Blog</h4>
+                <div>
+                    <header>
+                        <h5>Blog Post Title</h5>
+                        <p class="meta">Posted by Admin on <time>00.00.0000</time></p>
+                    </header>
+                    <main>
+                        <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
+                    </main>
+                    <footer>
+                        <a href="#" class="pull-right">Read More &raquo;</a>
+                    </footer>
+                </div>
+                <div>
+                    <header>
+                        <h5>Blog Post Title</h5>
+                        <p class="meta">Posted by Admin on <time>00.00.0000</time></p>
+                    </header>
+                    <main>
+                        <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
+                    </main>
+                    <footer>
+                        <a href="#" class="pull-right">Read More &raquo;</a>
+                    </footer>
+                </div>
+            </div>
+            <div id="my-form" class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <h4>Contact Us</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <input name="name" id="name" type="text" class="form-control" placeholder="Name"/>
+                    </div>
+                    <div class="form-group">
+                        <input name="email" id="email" type="email" class="form-control" placeholder="Email"/>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="5" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-default" type="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+            <div class="row" id="copyright">
+                <div class="col-md-6 pull-left">Copyright © 2013 Domain Name - All Rights Reserved</div>
+                <div class="col-md-6 pull-right text-right">Template by OS Templates</div>
+            </div>
+        </footer>
+    </div>
+    
+
+
+</body>
 </html>

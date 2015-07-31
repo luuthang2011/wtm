@@ -1,0 +1,24 @@
+﻿learn Jquery
+
+Event jquery dùng để xác định các sự kiện khi người dùng tương tác trang web trên trình duyệt
+　　Hầu hết các sk do người dùng kích hoạt
+　　.resize()
+　　.click()
+　　Dbclick()
+　　1 số sk do trình duyệt tự tạo ra
+　　.ready() html load xong
+　　Xem các events: http://api.jquery.com/category/events/
+!các jquery chỉ bắt đc sk vs các đối tượng tồn tại từ trước, các đối tượng tạo ra sau, ko đc áp dụng -> dùng .on()   !.on() có thể bắt nhiều sự kiện vs 1 đối tượng 
+　　on( "mouseenter mouseleave",....)
+Loại bỏ 1 sự kiện của đối tượng -> .off()
+Sự k 1 lần -> .one()
+Helper event: sự kiện là kết hợp của 1 vài sự kiện khác
+　　.hover() = mouseenter + mouseleave
+Event object: tạo ra 1 cái hàm chức năng, gọi chức năng khi có sự kiện
+Sử lý nhiều sự kiện trên 1 đối tượng
+Event delegation ????? 
+.trigger : kích hoạt các sự kiện (trong code) - tương đương tác động của người dùng
+Customer event 
+　　1 hành động đc kích hoạt bởi 1 trong nhiều sự kiện
+　　??????
+Event extensions ???

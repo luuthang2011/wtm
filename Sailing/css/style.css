@@ -1,0 +1,671 @@
+/* -----------------------------
+* body
+*-------------------------------*/
+
+body {
+    background-color: white;
+    font-family: roboto,sasans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.container {
+    padding: 0px;
+}
+
+@media (min-width: 769px) {
+    #my-hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {                /*768px : @screen-xs-max*/
+    #my-body {
+        display: none;
+    }
+}
+
+/* -----------------------------
+* navbar
+*-------------------------------*/
+
+#my-navbar {
+    font-size: 13px;
+    font-weight: bold;
+    max-width: 1170px;
+    min-height: 75px;
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+    background: none;
+    position: absolute;        /* dont move when page down */
+}
+
+#my-navbar li {
+    max-height: 37.5px;        /*very important*/
+}
+
+#my-navbar li a {
+    color: white;  
+}
+
+#my-logo {
+    min-width: 170px;         /*more side for text*/    
+    min-height: 75px;
+    margin-right: 50px;
+}
+
+#my-logo p {
+    font-family: Crimson;
+    font-weight: normal;
+    line-height: 75px;
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+}
+
+#my-logo img {
+    margin-top: 10px;
+}
+
+/*menu navbar*/
+
+#bs-example-navbar-collapse-1 ul {
+    min-height: 37.5px;
+}
+
+#my-contact a {
+    font-size: 13px;
+    font-weight: normal;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 1px;
+    margin-left: 20px;
+    border-bottom: 1px solid white;
+}
+
+#my-contact li {
+    min-height: 37.5px;
+}
+
+#my-contact li div a {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: none;
+}
+
+#my-contact span {
+    font-weight: bold;
+}
+
+#my-contact div {
+    border-bottom: 1px solid white;
+    max-height: 37.5px;
+    margin-left: 20px;
+}
+
+#my-fb {
+    margin-left: 0px !important;
+}
+
+#my-contact {
+    margin-right: 15px;
+}
+
+#botton a {
+    line-height: 30px;
+}
+
+#botton a:hover {
+    font-size: 16px;
+}
+
+#my-drop-nav {
+    font-size: 13px;
+    font-weight: normal;
+    color: white;    
+}
+
+#my-drop-nav button {
+    background: none;
+    border: none;
+    margin-top: 17px;
+}
+
+#my-drop-nav ul li a {
+    color: black;
+    font-size: 16px;
+}
+
+#my-drop-nav ul li a:hover {
+    font-size: 18px;
+}
+
+/* -----------------------------
+* slide
+*-------------------------------*/
+
+#wrap-slide {
+     min-height: 650px;
+}
+
+#my-slide .carousel-control.left {   /*none background control*/
+    margin-left: 10px;
+    background: none;
+}
+
+#my-slide .carousel-control.right {
+    margin-right: 10px;
+    background: none;
+}
+
+@media (max-width: 768px) {                /*768px : @screen-xs-max*/
+    #my-slide {
+        display: none;
+    }
+}
+
+#my-button {
+    background: none;
+    color: white;
+    margin-top: 20px;
+}
+
+#my-slide h1 {
+    font-family: Crimson;
+    font-size: 60px;
+}
+
+#my-slide p {
+    font-family: roboto;
+    font-size: 24px;
+}
+
+@media (min-width: 1200px) { 
+    #my-caption {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 960px) {
+    #my-slide h1 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 679px) and (max-width: 899px) {
+    #my-slide h1 {
+        font-size: 40px;
+    }
+}
+
+/* -----------------------------
+* date
+*-------------------------------*/
+
+#my-date {
+    background-color: white;
+    margin: auto;
+    max-width: 1140px;        
+    min-height: 25px;
+    border: 2px solid #f0f0f0;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 7.5%;
+    left: 7.5%;
+    border-top: none;
+}
+
+#my-date div {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.margin {
+    margin-left: 20px;
+}
+
+.spec-margin {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#my-date button {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.fix-top {
+    margin-top: 0px!important;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+    .spec-margin {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .fix-top {
+        margin-top: 0px!important;
+        margin-bottom: 10px;
+    }
+}
+
+.input-group-addon {
+    background-color: white;
+}
+
+@media (max-width: 768px) {                /*768px : @screen-xs-max*/
+    #my-date {
+        border-top: 2px solid silver ;
+    }
+}
+
+/* -----------------------------
+* mid: title + slide
+* copy: http://www.jssor.com
+*-------------------------------*/
+
+/* jssor slider bullet navigator skin 03 css */
+/*
+.jssorb03 div           (normal)
+.jssorb03 div:hover     (normal mouseover)
+.jssorb03 .av           (active)
+.jssorb03 .av:hover     (active mouseover)
+.jssorb03 .dn           (mousedown)
+*/
+
+.jssorb03 {
+    position: absolute;
+}
+            
+.jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    line-height: 21px;
+    color: white;
+    font-size: 12px;
+    background: url(./images/b03.png) no-repeat;                 /* show number */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.jssorb03 div { 
+    background-position: -5px -4px; 
+}
+
+.jssorb03 div:hover, .jssorb03 .av:hover { 
+    background-position: -35px -4px; 
+}
+
+.jssorb03 .av { 
+    background-position: -65px -4px; 
+}
+
+.jssorb03 .dn, .jssorb03 .dn:hover { 
+    background-position: -95px -4px; 
+}
+
+/* jssor slider arrow navigator skin 03 css */
+/*
+.jssora03l                  (normal)
+.jssora03r                  (normal)
+.jssora03l:hover            (normal mouseover)
+.jssora03r:hover            (normal mouseover)
+.jssora03l.jssora03ldn      (mousedown)
+.jssora03r.jssora03rdn      (mousedown)
+*/
+
+.jssora03l, .jssora03r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url(./images/a03.png) no-repeat;              /* left/right button */
+    overflow: hidden;
+}
+
+.jssora03l { 
+    background-position: -3px -33px; 
+}
+
+.jssora03r { 
+    background-position: -63px -33px; 
+}
+
+.jssora03l:hover { 
+    background-position: -123px -33px; 
+}
+
+.jssora03r:hover {
+    background-position: -183px -33px; 
+}
+
+.jssora03l.jssora03ldn { 
+    background-position: -243px -33px; 
+}
+
+.jssora03r.jssora03rdn {
+    background-position: -303px -33px;
+}
+
+#my-container {
+    max-width: 1140px;               /*padding 0px*/  
+}
+
+#my-container h1 {
+    font-family: Crimson600;
+    font-size: 40px;
+    font-weight: semi-bold;          /*error*/
+    margin-top: 60px;
+}
+
+#my-container p {
+    font-size: 15px;
+    color: #696969;
+}
+
+#slider1_container {
+    position: relative; 
+    top: 0px; 
+    left: 0px; 
+    width: 809px; 
+    height: 180px;                      /* accumpany with mid-slides and my_js */
+    overflow: hidden;
+}
+
+#mid-slides {
+    cursor: move; 
+    position: absolute; 
+    left: 0px; 
+    top: 0px; 
+    width: 809px; 
+    height: 180px;                      /* accumpany with slider1 and my_js */
+    overflow: hidden;
+}
+
+#mid-slide-title {
+    margin-top: 90px;
+    margin-bottom: 35px;
+    color: #2a2a2a;
+}
+
+@media (max-width: 768px) {                /*768px : @screen-xs-max*/
+    #my-container {
+        display: none;
+    }
+}
+
+#arrowleft {
+    top: 123px; 
+    left: 8px;
+}
+
+#arrowright {
+    top: 123px; 
+    right: 8px;
+}
+
+/* -----------------------------
+* mid: banner + about
+*-------------------------------*/
+
+#mid-banner {
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+#my-about {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 70px;
+}
+
+#my-about h2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: crimson;
+    font-size: 24px;
+}
+
+#my-about-1 {
+    margin-top: 145px;
+}
+
+#my-about p {
+    font-family: roboto;
+    font-size: 15px;
+}
+
+#space-1 {
+    margin-bottom: 35px;
+}
+
+#space-2 {
+    margin-top: 50px;
+}
+
+.blue-text {
+    color: #2eb0d1;
+}
+
+.fa {
+    margin-right: 10px;
+}
+
+/* -----------------------------
+* mid: video
+*-------------------------------*/
+
+#test {
+    height: 450px!important;
+    width: 100%;
+}
+
+.embed-responsive-4by3 {
+    padding-bottom: 35%;
+}
+
+#my-video {
+    height: 450px!important;
+    width: 100%!important;
+}
+
+/* -----------------------------
+* event
+*-------------------------------*/
+
+#my-event {
+    max-width: 1170px;
+    margin: auto;
+    font-family: Crimson;
+}
+
+#my-event h4 {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+#my-event h3 {
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#my-event p {
+    font-family: roboto;
+    font-size: 15px;
+    color: #5a5a5a;
+}
+
+#my-event a {
+    font-family: roboto;
+    font-size: 15px;
+    color: #2eb0d0;
+    margin-bottom: 80px;
+} 
+
+#my-event-1 div {
+    margin-bottom: 35px;
+}
+
+#my-slide-mid .carousel-control.left {   /*none background control*/
+    margin-left: 10px;
+    background: none;
+}
+
+#my-slide-mid .carousel-control.right {
+    margin-right: 10px;
+    background: none;
+}
+
+#my-slide-mid-text {
+    padding: 20px 20px 90px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    position: relative;
+}
+
+#my-slide-mid-img {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#my-slide-mid-1 h4 {
+    font-family: roboto;
+    font-size: 15px;
+    color: #2eb0d0;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#my-slide-mid-1 p {
+    font-family: roboto;
+    font-size: 13px;
+    font-style: italic;
+}
+
+#my-slide-mid .carousel-indicators li {
+  background-color: #888888;
+  border: none;
+  width: 12px;                       /*size of point*/
+  height: 12px;
+}
+
+#my-slide-mid .carousel-indicators {    /*slide point*/
+    bottom: -30px;
+    margin-bottom: 0; 
+    left: 60px; 
+}
+
+#my-slide-mid .carousel-indicators .active {     /*slide point*/
+  background-color: #2eb0d0;
+}
+
+#my-slide-mid-1 {
+    padding: 15px;
+}
+
+#Instagram img {
+    padding: 5px;
+}
+
+/* -----------------------------
+* footer
+*-------------------------------*/
+
+#wrap-footer {
+    background: #edf1f4;
+    min-height: 400px;
+    padding-top: 80px;
+}
+
+#my-footer {
+    margin: auto;
+    max-width: 1170px;
+    border-bottom: 1px solid silver;
+    min-height: 250px;
+}
+
+#my-logo-footer {
+    min-width: 200px;
+}
+
+#my-footer-p {
+    color: black;
+    font-family: Crimson;
+    font-weight: bold;
+    line-height: 55px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#my-logo-footer {
+    font-family: roboto;
+    font-size: 15px;
+    color: #7a7a7a;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pa {
+    margin-bottom: 25px;
+}
+
+#contact {
+    margin-top: 60px;
+    font-family: roboto;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+#contact a {
+    color: black;
+}
+
+#login h3 {
+    font-family: Crimson;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+#login button {
+    color: white;
+    background-color: black;
+}
+
+#login form {
+    margin-top: 30px;
+}
+
+#login div a {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #7a7a7a;
+}
+
+#login input {
+    width: 250px;
+}
+
+#design {
+    margin-top: 30px;
+    margin-left: 100px;
+    color: #7a7a7a;
+    font-size: 13px;
+}

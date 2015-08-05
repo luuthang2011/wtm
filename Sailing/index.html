@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    	<meta http-equiv="content-type" content="text/html" />
+    	<meta name="luuthang2011" content="foobla.com" />
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>   
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" /> 
+        <link rel="stylesheet" href="css/bootstrap-select.min.css" /> 
+        <!-- my css -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'/>
+    	<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <title>Sailing Hotel</title>
+    </head>
+    
+    <body>
+        <h1 id="my-hidden">Mobile devices are not yet supported this web !!!</h1>
+        <div id="my-body" class="container-fluid">  
+            <!-- navbar -->
+            <nav id="my-navbar" class="navbar navbar-default container navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <!-- data-target: effect button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="my-logo" class="navbar-brand" href="#">
+                        <img class="pull-left media-left" src="images/logo.png" />     <!-- pull + space-->
+                        <p>Sailing</p>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul id="my-contact" class="nav navbar-nav navbar-right">       <!-- right -->
+                        <li><a href="#">Call us. <span>+00 123 456 789</span></a></li>
+                        <li>
+                            <div id="my-drop-nav" class="dropdown">
+                                <button char="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Language
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Vietnamese</a></li>
+                                </ul>
+                            </div>
+                        </li>                       
+                        <li>
+                            <div>
+                                <a id="my-fb" href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-skype"></a>
+                                <a href="#" class="fa fa-pinterest"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="botton" class="nav navbar-nav navbar-right">       <!-- right -->
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PAGE</a></li>
+                        <li><a href="#">RESERVATION</a></li>
+                        <li><a href="#">ROOM</a></li>
+                        <li><a href="#">GALERRY</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">FEATURES</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="wrap-slide"> 
+                <!-- slide // id:my-slide -> help control left right-->
+                <div id="my-slide" class="carousel carousel slide" data-ride="carousel"> 
+                    <!-- wrapper -->
+                    <div class="carousel-inner" role="listbox">   <!-- made slide list -->
+                        <div class="item active">
+                            <img src="images/slide_1.jpg"/>
+                            <div id="my-caption" class="carousel-caption">
+                                <h1 class="caption-title">
+                					Welcome to Sailing Hotel v0
+                				</h1>	   
+                				<p class="caption-content">
+                					Where every stay is unique.
+                				</p>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <button id="my-button" class="btn btn-default" type="submit">Explore</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/slide_2.jpg"/>
+                            <div id="my-caption" class="carousel-caption">
+                                <h1 class="caption-title">
+                					Welcome to Sailing Hotel v1
+                				</h1>	   
+                				<p class="caption-content">
+                					Where every stay is unique.
+                				</p>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <button id="my-button" class="btn btn-default" type="submit">Explore</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/slide_3.jpg"/>
+                            <div id="my-caption" class="carousel-caption">
+                                <h1 class="caption-title">
+                					Welcome to Sailing Hotel v2
+                				</h1>	   
+                				<p class="caption-content">
+                					Where every stay is unique.
+                				</p>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <button id="my-button" class="btn btn-default" type="submit">Explore</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#my-slide" role="button" data-slide="prev"></a>
+                    <a class="right carousel-control" href="#my-slide" role="button" data-slide="next"></a>            
+                </div>  <!-- end slide -->
+                
+                <div id="my-date" class="container row">
+                <!-- date @https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+                    <!-- Linked Pickers -->
+                    <div class='col-md-2 col-sm-5 col-xs-12 clearfix'>
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker6'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-2 margin col-sm-5 col-xs-12 clearfix'>
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker7'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>    <!-- end table date -->
+                <!-- http://silviomoreto.github.io/bootstrap-select/ -->
+                    <div class='col-md-2 margin fix-top col-sm-5 col-xs-12 clearfix'>
+                        <select class="selectpicker">
+                            <option>Adults</option>
+                            <option>1 Adult</option>
+                            <option>2 Adults</option>
+                            <option>3 Adults</option>
+                            <option>4 Adults</option>
+                            <option>5 Adults</option>
+                        </select>
+                    </div>
+                    <div class='col-md-2 spec-margin fix-top col-sm-5 col-xs-12 clearfix'>
+                        <select class="selectpicker">
+                            <option>Children</option>
+                            <option>1 Child</option>
+                            <option>2 Children</option>
+                            <option>3 Children</option>
+                            <option>4 Children</option>
+                            <option>5 Children</option>
+                        </select>
+                    </div>
+                    <div class='col-md-2 col-sm-5 col-xs-12 clearfix'>
+                        <button type="button" class="btn btn-info">Check Availability</button>
+                    </div>
+                </div>      <!-- end select -->
+            </div>      <!-- end wrap -->
+            <div id="my-container" class="container">
+                <div class="text-center">
+                    <h1>Hotel Master Rooms</h1>
+                    <p>Semper ac dotor vitae accumsan</p>
+                </div>                   
+                <div>
+                    <p class="text-center" id="mid-slide-title">&larr; View All Rooms &rarr;</p> 
+                    <!-- Jssor Slider Begin -->
+                        <div id="slider1_container">             
+                            <!-- Loading Screen -->
+                            <div u="loading" id="loading">
+                                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                                    background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+                                </div>
+                                <div style="position: absolute; display: block; background: url(images/loading.gif) no-repeat center center;
+                                    top: 0px; left: 0px;width: 100%;height:100%;">
+                                </div>
+                            </div>            
+                            <!-- Slides Container -->
+                            <div u="slides" id="mid-slides">
+                                <div><img u="image" src="images/room1-t.jpg" /></div>
+                                <div><img u="image" src="images/room2-t.jpg" /></div>
+                                <div><img u="image" src="images/room3-t.jpg" /></div>
+                                <div><img u="image" src="images/room4-t.jpg" /></div>
+                                <div><img u="image" src="images/room5.jpg" /></div>
+                                <div><img u="image" src="images/room6.jpg" /></div>
+                                <div><img u="image" src="images/room7.jpg" /></div>
+                            </div>
+                            <div u="navigator" class="jssorb03" style="top: 4px; right: 6px;">
+                                <!-- bullet navigator item prototype -->
+                                <div u="prototype"><div u=""></div></div>                 <!-- show number slide numbertemplate -->
+                            </div>
+                            <span u="arrowleft" class="jssora03l" id="arrowleft">
+                            </span>
+                            <!-- Arrow Right -->
+                            <span u="arrowright" class="jssora03r" id="arrowright">
+                            </span>
+                        </div>      <!-- end Jssor Slider --> 
+                    </div>         <!-- end Jssor wrap -->                                         
+            </div>      <!-- end container -->
+            <!-- mid-banner -->
+            <div>
+                <img id="mid-banner" src="images/banner.jpg"/>
+            </div>
+            <!-- about side -->
+            <div id="my-about" class="container row">
+                <div class="col-sm-6 col-md-4">
+                    <h2>Sailing Hotel</h2>
+                    <img class="img-responsive" src="images/about.jpg"/>
+                </div>
+                <div id="my-about-1" class="col-sm-6 col-md-4">
+                    <p id="space-1" >Laculis diam eu tortor euismodolo. Vestib ulum antipsum primis inicibu orci luctus edloret ultrices et posuere cubil sed odiocinialor it matis ed. </p>
+                    <p>Eu tortor euismodolo. Vestibulum ant psu meop primis inicibu orci luctus ed ultrices et posuere cubil. </p>
+                    <p id="space-2"><a href="#"><i class="fa fa-phone blue-text"></i> +00 123 456 789</a></p>
+                    <p><a href="#"><i class="fa fa-envelope blue-text"></i> hello@yourmail.com</a></p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h2>Our Services</h2>
+                    <p><i class="fa fa-check-circle blue-text"></i> 24 hour front desk staff</p>
+                    <p><i class="fa fa-check-circle blue-text"></i> Free airport pick up service</p>
+                    <p><i class="fa fa-check-circle blue-text"></i> Swimming pool</p>
+                    <p><i class="fa fa-check-circle blue-text"></i> 24h Parking</p>
+                    <p><i class="fa fa-check-circle blue-text"></i> 2 Revoling Coktail bar</p>
+                    <p><i class="fa fa-check-circle blue-text"></i> 4 Restaurants</p>
+                    <p><i class="fa fa-check-circle blue-text"></i> 200 Rooms</p>
+                    <p><i class="fa fa-check-circle blue-text"></i> Free breakfast everyday</p>
+                </div>
+            </div>
+            
+            <!-- video -->
+            <div>
+                <video id="my-video" controls="">
+                    <source src="videos/video1.mp4" type="video/mp4"/>
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            
+            <!-- event -->
+            <div id="my-event" class="container">
+                <div id="my-event-1" class='col-sm-6 col-md-4 clearfix'>
+                    <h3>Upcoming Events</h3>
+                    <div>
+                        <img src="images/small img.jpg" class="pull-left media-left" alt="60x60px"/>
+                        <div class="media-right">
+                            <h4>Does Wikipedia Need a Medical Disclaimer?</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisici... </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/small img.jpg" class="pull-left media-left" alt="60x60px"/>
+                        <div class="media-right">
+                            <h4>Does Wikipedia Need a Medical Disclaimer?</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisici... </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/small img.jpg" class="pull-left media-left" alt="60x60px"/>
+                        <div class="media-right">
+                            <h4>Does Wikipedia Need a Medical Disclaimer?</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisici... </p>
+                        </div>
+                    </div>
+                    <a href="#" class="pull-left">Read All Event</a>
+                </div>
+                <div class='col-sm-6 col-md-4 clearfix'>
+                    <h3>Testimonial</h3>
+                    <!-- Testimonial slide -->
+                    <div id="my-slide-mid" class="carousel slide" data-ride="carousel">
+                        <!-- indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#my-slide-mid" data-slide-to="0" class="active"></li>
+                		    <li data-target="#my-slide-mid" data-slide-to="1"></li>
+                		    <li data-target="#my-slide-mid" data-slide-to="2"></li>
+                        </ol>
+                        <!-- wrapper -->
+                        <div class="carousel-inner" role="listbox">   <!-- made slide list -->
+                            <div class="item active">
+                                <div id="my-slide-mid-text" >
+                                    <p>Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo laudantium magni sed temporibus. </p>
+                                    <p>Amet atque aut autem consectetur consequuntur dolorum enim error hic inventore molestiae nisi nostrum numquam optio perspiciatis provident.</p>                                
+                                </div>
+                                <div id="my-slide-mid-1">
+                                    <div id="my-slide-mid-img">
+                                        <img src="images/peter.jpg" class="pull-left media-left" alt="gosu"/>
+                                    </div>
+                                    <h4>Peter Packer</h4>
+                                    <p>CEO of Tourislink</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div id="my-slide-mid-text" >
+                                    <p>Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo laudantium magni sed temporibus. </p>
+                                    <p>Amet atque aut autem consectetur consequuntur dolorum enim error hic inventore molestiae nisi nostrum numquam optio perspiciatis provident.</p>                                
+                                </div>
+                                <div id="my-slide-mid-1">
+                                    <div id="my-slide-mid-img">
+                                        <img src="images/peter.jpg" class="pull-left media-left" alt="gosu"/>
+                                    </div>
+                                    <h4>Peter Packer</h4>
+                                    <p>CEO of Tourislink</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div id="my-slide-mid-text" >
+                                    <p>Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo laudantium magni sed temporibus. </p>
+                                    <p>Amet atque aut autem consectetur consequuntur dolorum enim error hic inventore molestiae nisi nostrum numquam optio perspiciatis provident.</p>                                
+                                </div>
+                                <div id="my-slide-mid-1">
+                                    <div id="my-slide-mid-img">
+                                        <img src="images/peter.jpg" class="pull-left media-left" alt="gosu"/>
+                                    </div>
+                                    <h4>Peter Packer</h4>
+                                    <p>CEO of Tourislink</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#my-slide-mid" role="button" data-slide="prev"></a>
+                        <a class="right carousel-control" href="#my-slide-mid" role="button" data-slide="next"></a>
+                    </div>      <!-- end Testimonial slide -->    
+                </div>
+                <div id="Instagram" class='col-sm-12 col-md-4 clearfix row'>
+                    <h3>Instagram Slider</h3>
+                    <img class="col-sm-4 col-md-4 clearfix" src="images/instagram1.jpg"/>
+                    <img class="col-sm-4 col-md-4 clearfix" src="images/instagram2.jpg"/>
+                    <img class="col-sm-4 col-md-4 clearfix" src="images/instagram3.jpg"/>
+                    <img class="col-sm-4 col-md-4 clearfix" src="images/instagram4.jpg"/>
+                    <img class="col-sm-4 col-md-4 clearfix" src="images/instagram5.jpg"/>
+                    <img class="col-sm-4 col-md-4 clearfix" src="images/instagram6.jpg"/>
+                    <img class="col-sm-4 col-md-4 clearfix" src="images/instagram7.jpg"/>
+                    <img class="col-sm-4 col-md-4 clearfix" src="images/instagram8.jpg"/>
+                    <img class="col-sm-4 col-md-4 clearfix" src="images/instagram9.jpg"/>
+                </div>
+            </div>      <!-- end event -->
+            
+            <!-- footer -->
+            <div id="wrap-footer">
+                <div id="my-footer" class="container row">
+                    <div class='col-sm-6 col-md-4 clearfix'>
+                        <a id="my-logo-footer" class="navbar-brand" href="#">
+                            <img class="pull-left media-left" src="images/logo2.png" />     <!-- pull + space-->
+                            <p id="my-footer-p">Sailing</p>
+                            <p>Call. <span class="bold">+00 123 456 789</span></p>
+                            <p class="pa">Email. <span class="bold">hello@yourmail.com</span></p>
+                            <p>329 Queensberry Street, North Mellboune</p>
+                            <p>VIC 3051, Australia</p>
+                        </a> 
+                    </div>
+                    <div id="contact" class='col-sm-6 col-md-4 clearfix'>
+                        <div class='col-sm-6 col-md-6 clearfix'>
+                            <p><a href="#">About Us</a></p>
+                            <p><a href="#">Work Here</a></p>
+                            <p><a href="#">Team</a></p>
+                            <p><a href="#">Happenings</a></p>
+                        </div>
+                        <div class='col-sm-6 col-md-6 clearfix'>
+                            <p><a href="#">Support</a></p>
+                            <p><a href="#">FAQs</a></p>
+                            <p><a href="#">Warranty</a></p>
+                            <p><a href="#">Contact Us</a></p>
+                        </div>
+                    </div>
+                    <div id="login" class='col-sm-6 col-md-4 clearfix'>
+                        <h3>Get Our Newsletter</h3>
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your email here"/>
+                                <button type="submit" class="btn btn-default">Sign In</button>
+                            </div>
+                        </form>
+                        <div>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-skype"></a>
+                            <a href="#" class="fa fa-pinterest"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="design">
+                    <div class="col-md-6 pull-left">Designed by <a>ThimPress</a>. Powered WordPress</div>
+                </div>
+            </div>
+        </div>      <!-- end my body -->
+    </body>
+    
+    <!-- script -->
+        <script src="js/jquery-1.11.3.min.js"></script> 
+        <script type="text/javascript" src="js/moment.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+        <script type="text/javascript" src="js/my_js.js"></script>
+        <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <!-- script -->
+    
+</html>

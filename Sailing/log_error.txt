@@ -1,21 +1,29 @@
-﻿/*Sailing: log error*/
+/*Sailing: log error*/
 
+------------------------------------------------
 update 16:28 5/8/2015
 
 <!-- all -->
 - chưa hỗ trợ mobile 
 - chiều ngang bị thừa 20px ?????????? 
-- ko có text nền của thanh date
 - thay đổi poptop/popbottom của date/people ko đồng bộ
 - thanh date bị di chuyển nếu độ cao màn hình giảm quá nhiều (vd: mở box inspector-firefox)
 - ko thể sử dụng 2 phím -> ở "view all rooms" để đk 
 	-> fix tạm thời: click góc trên của ảnh ngoài cùng để di chuyển 4 ảnh / lần
 - ko có title của ảnh ( thêm vào thì nó ko hiện ?????? )
-- "peter packer" ko để đc ở giữa dòng kẻ
 
 <!-- only index.html -->
 - video chỉ để ở 16:9 / 4:3
 
+------------------------------------------------
+update 0:11 6/8/2015
+
 <!-- only index_test.html -->
-- ko chạy video trên c9.io
-- chạy okee trên máy (local host)
+- Fixed src video
+
+------------------------------------------------
+update 15:24 6/8/2015 
+
+<!-- all -->
+- Fixed "peter packer"
+- Add placeholder

@@ -136,7 +136,7 @@
                     <div class='col-md-2 col-sm-5 col-xs-12 clearfix'>
                         <div class="form-group">
                             <div class='input-group date' id='datetimepicker6'>
-                                <input type='text' class="form-control" />
+                                <input type='text' class="form-control" placeholder="Arrival Date"/>
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-calendar"></span>
                                 </span>
@@ -146,7 +146,7 @@
                     <div class='col-md-2 margin col-sm-5 col-xs-12 clearfix'>
                         <div class="form-group">
                             <div class='input-group date' id='datetimepicker7'>
-                                <input type='text' class="form-control" />
+                                <input type='text' class="form-control" placeholder="Departure Date"/>
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-calendar"></span>
                                 </span>
@@ -249,11 +249,8 @@
             </div>
             
             <!-- video -->
-            <div>
-                <video id="my-video" controls="">
-                    <source src="videos/video1.mp4" type="video/mp4"/>
-                    Your browser does not support HTML5 video.
-                </video>
+            <div class="embed-responsive embed-responsive-4by3">                           <!-- dont set 16:9 -->
+                <iframe id="test" class="embed-responsive-item" src="https://www.youtube.com/embed/Kn9GUa9Moqw"></iframe>
             </div>
             
             <!-- event -->
@@ -295,7 +292,7 @@
                         </ol>
                         <!-- wrapper -->
                         <div class="carousel-inner" role="listbox">   <!-- made slide list -->
-                            <div class="item active">
+                            <div class="item active min_hei">
                                 <div id="my-slide-mid-text" >
                                     <p>Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo laudantium magni sed temporibus. </p>
                                     <p>Amet atque aut autem consectetur consequuntur dolorum enim error hic inventore molestiae nisi nostrum numquam optio perspiciatis provident.</p>                                
@@ -308,7 +305,7 @@
                                     <p>CEO of Tourislink</p>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item  min_hei">
                                 <div id="my-slide-mid-text" >
                                     <p>Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo laudantium magni sed temporibus. </p>
                                     <p>Amet atque aut autem consectetur consequuntur dolorum enim error hic inventore molestiae nisi nostrum numquam optio perspiciatis provident.</p>                                
@@ -321,7 +318,7 @@
                                     <p>CEO of Tourislink</p>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item  min_hei">
                                 <div id="my-slide-mid-text" >
                                     <p>Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo laudantium magni sed temporibus. </p>
                                     <p>Amet atque aut autem consectetur consequuntur dolorum enim error hic inventore molestiae nisi nostrum numquam optio perspiciatis provident.</p>                                

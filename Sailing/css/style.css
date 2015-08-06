@@ -566,7 +566,7 @@ body {
 }
 
 #my-slide-mid .carousel-indicators {    /*slide point*/
-    bottom: -30px;
+    bottom: -10px;
     margin-bottom: 0; 
     left: 60px; 
 }
@@ -577,10 +577,17 @@ body {
 
 #my-slide-mid-1 {
     padding: 15px;
+    position: absolute; 
+    top: 230px;
+    min-width: 300px;
 }
 
 #Instagram img {
     padding: 5px;
+}
+
+.min_hei {
+    min-height: 400px;
 }
 
 /* -----------------------------
